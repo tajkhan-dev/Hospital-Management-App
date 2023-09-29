@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <?php include('components/head.php'); ?>
 
 
@@ -15,6 +16,7 @@
 	<!-- About -->
 	<?php include('components/about.php'); ?>
 	<!-- <section class="cta-section ">
+
 	<div class="container">
 		<div class="cta position-relative">
 			<div class="row">
@@ -140,6 +142,7 @@
 			</div>
 		</div>
 	</div>
+
 </section> -->
 	<!-- Appointment -->
 	<?php include('components/appointment.php'); ?>
@@ -158,3 +161,4 @@
 </body>
 
 </html>
+

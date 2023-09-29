@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="zxx">
+
 <?php include('components/head.php'); ?>
 
 
 <body id="top">
 <?php include('components/navbar.php'); ?>
+
 
 	
 
@@ -114,6 +116,7 @@
 </section>
 
 <!-- footer Start -->
+
 <?php include('components/footer.php'); ?>
 
    
@@ -121,7 +124,9 @@
     <!-- 
     Essential Scripts
     =====================================-->
+
 	<?php include('components/scripts.php'); ?>
+
 
 
   </body>
