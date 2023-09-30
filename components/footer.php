@@ -7,8 +7,7 @@
             <img src="images/logo.png" alt="" class="img-fluid" />
           </div>
           <p>
-            Tempora dolorem voluptatum nam vero assumenda voluptate, facilis ad
-            eos obcaecati tenetur veritatis eveniet distinctio possimus.
+          Streamline hospital operations and enhance online presence with our efficient hospital website management services. We ensure a user-friendly, informative, and up-to-date website, helping you connect with patients and provide essential information effortlessly.
           </p>
 
           <ul class="list-inline footer-socials mt-4">

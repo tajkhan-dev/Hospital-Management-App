@@ -40,7 +40,7 @@
 					<img src="images/service/service-1.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Child care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">We prioritize the health and well-being of our youngest patients, providing comprehensive child care services in a warm and welcoming environment, ensuring their growth and development.</p>
 					</div>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 					<img src="images/service/service-2.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2  title-color">Personal Care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Tailoring our care to each patient's unique needs, we offer personalized healthcare solutions that focus on individual well-being and recovery.</p>
 					</div>
 				</div>
 			</div>
@@ -60,7 +60,7 @@
 					<img src="images/service/service-3.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">CT scan</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Our advanced CT scanning technology delivers precise imaging, aiding in the diagnosis and treatment of various medical conditions, while minimizing discomfort for patients.</p>
 					</div>
 				</div>
 			</div>
@@ -71,7 +71,7 @@
 					<img src="images/service/service-4.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Joint replacement</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4"> We excel in joint replacement procedures, offering relief from pain and improved mobility for patients suffering from joint problems, including knee and hip replacements.</p>
 					</div>
 				</div>
 			</div>
@@ -81,7 +81,7 @@
 					<img src="images/service/service-6.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Examination & Diagnosis</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Our experienced medical professionals offer thorough examinations and accurate diagnoses to identify health issues promptly, ensuring timely and effective treatment.</p>
 					</div>
 				</div>
 			</div>
@@ -91,7 +91,7 @@
 					<img src="images/service/service-8.jpg" alt="" class="img-fluid">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color">Alzheimer's disease</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
+						<p class="mb-4">Our specialized care team provides compassionate support and tailored treatment for individuals living with Alzheimer's disease, enhancing their quality of life and well-being.</p>
 					</div>
 				</div>
 			</div>
