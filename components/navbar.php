@@ -29,8 +29,11 @@
                             <li><a class="dropdown-item" href="appoinment.php">Appoinment</a></li>
                         </ul>
                       </li>
-    
+      
                       <li class="nav-item"><a class="nav-link" href="blogs.php">blogs</a></li>
+
+                    <li><a class="nav-link"> <i class="nav-item fa-solid fa-right-from-bracket icon"  style="font-size: larger; cursor: pointer;"></i></a></li>
+                      
                 </ul>
               </div>
             </div>

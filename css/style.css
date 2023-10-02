@@ -396,6 +396,12 @@ a:focus {
   margin-top: 10px;
 }
 
+
+
+.icon{
+  font-size: larger;
+}
+
 .dropdown .dropdown-menu {
   position: absolute;
   display: block;
