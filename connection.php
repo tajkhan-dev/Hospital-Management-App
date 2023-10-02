@@ -3,7 +3,9 @@
 
 $conn = new mysqli("localhost","root","","caregroup");
 
-echo $conn->connect_error ? "connection not esbablished".$conn->connect_error :"Connected Successfully";
+echo $conn->connect_error ? "connection not esbablished".$conn->connect_error :"";
+
+
 
 
 ?>
