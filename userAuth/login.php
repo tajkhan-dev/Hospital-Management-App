@@ -8,7 +8,7 @@ session_start();
 
 if(isset($_SESSION['username'])){
 
-    echo "<script>window.location.href='/hassu/e-project/code/Hospital-Management-App/'</script>";
+    echo "<script>window.location.href='/Hospital-Management-App/index.php'</script>";
 }else{
 ?>
 

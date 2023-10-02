@@ -171,4 +171,6 @@ if(isset($_SESSION['username'])){
 
 </html>
 
-<?php }?>
+<?php }else{
+echo "<script>window.location.href='/Hospital-Management-App/userAuth/login.php'</script>"	;
+}?>

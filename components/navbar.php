@@ -14,7 +14,7 @@
                 <span class="icofont-navigation-menu"></span>
               </button>
               
-              <form  method="post">
+              <form action="#"  method="post">
 
               <div class="collapse navbar-collapse" id="navbarmain">
                 <ul class="navbar-nav ml-auto">
@@ -65,7 +65,7 @@ session_start();
   session_unset();
 session_destroy();
 
-echo "<script>window.location.href='/hassu/e-project/code/Hospital-Management-App/userAuth/login.php'</script>";
+echo "<script>window.location.href='userAuth/login.php'</script>";
 
 }
 
