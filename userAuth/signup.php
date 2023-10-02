@@ -1,4 +1,19 @@
 <!DOCTYPE html>
+
+
+<?php
+
+session_start();
+
+
+if(isset($_SESSION['username'])){
+
+    echo "<script>window.location.href='/hassu/e-project/code/Hospital-Management-App/'</script>";
+}else{
+?>
+
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -56,3 +71,5 @@
       </section>
 </body>
 </html>
+
+<?php }?>

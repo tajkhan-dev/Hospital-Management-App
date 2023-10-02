@@ -1,6 +1,8 @@
 <?php
 
-include("connection.php");
+session_start();
+
+include('../connection.php');
 
 if(isset($_POST['addUser'])){
 
@@ -15,10 +17,10 @@ $userAddress = $_POST['address'];
 
 
     $query_forName = "SELECT `username` FROM `userdata` WHERE `username` = '$userName' ";
-    $query_forEmail = "  SELECT `email` FROM `userdata` WHERE `email` = '$userEmail' ";
+    $query_forEmail = "SELECT `email` FROM `userdata` WHERE `email` = '$userEmail' ";
 
-   $res_name = mysqli_query($connection,$query_forName);
-   $res_email = mysqli_query($connection,$query_forEmail);
+   $res_name = mysqli_query($conn,$query_forName);
+   $res_email = mysqli_query($conn,$query_forEmail);
 
     
 
@@ -32,12 +34,19 @@ else{
         
         echo "<script>alert('This Email is already taken');window.location.href='signup.php'</script>";                   
         
-         
+        
     }else{
         
+
+$_SESSION['username'] = $userName;
+
         $query_POST = "INSERT INTO `userdata`(`username`, `email`, `phone`, `address`) VALUES ('$userName','$userEmail','$userPhone','$userAddress')";
         
-        $res = mysqli_query($connection,$query_POST);
+        $res = mysqli_query($conn,$query_POST);
+        
+        echo "<script>alert('User saved Successfully !');window.location.href='/hassu/e-project/code/Hospital-Management-App/'</script>";                   
+        
+        
     }
 
 

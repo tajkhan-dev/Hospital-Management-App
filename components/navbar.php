@@ -1,6 +1,8 @@
 
 
-    <header>
+<header>
+
+
 
         <nav class="navbar navbar-expand-lg navigation" id="navbar">
             <div class="container">
@@ -11,7 +13,9 @@
                   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="icofont-navigation-menu"></span>
               </button>
-          
+              
+              <form  method="post">
+
               <div class="collapse navbar-collapse" id="navbarmain">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
@@ -32,10 +36,38 @@
       
                       <li class="nav-item"><a class="nav-link" href="blogs.php">blogs</a></li>
 
-                    <li><a class="nav-link"> <i class="nav-item fa-solid fa-right-from-bracket icon"  style="font-size: larger; cursor: pointer;"></i></a></li>
-                      
+                      <button class="nav-item" style="background : none;border:none;" name="logout">
+                         <li><a class="nav-link">
+                          
+                          <i class="nav-item fa-solid fa-right-from-bracket icon"  
+                          style="font-size: larger; cursor: pointer;"  ></i>
+                          
+                        </a></li>
+                        
+                      </button>
+                        
+                      </form>
+
                 </ul>
               </div>
             </div>
         </nav>
+
+
+
+<?php
+
+
+
+if(isset($_POST['logout'])){
+
+session_start();
+  session_unset();
+session_destroy();
+
+echo "<script>window.location.href='/hassu/e-project/code/Hospital-Management-App/userAuth/login.php'</script>";
+
+}
+
+?>  
     </header>
