@@ -44,7 +44,7 @@ $_SESSION['username'] = $userName;
         
         $res = mysqli_query($conn,$query_POST);
         
-        echo "<script>alert('User saved Successfully !');window.location.href='Hospital-Management-App/'</script>";                   
+        echo "<script>alert('User saved Successfully !');window.location.href='/Hospital-Management-App/index.php'</script>";                   
         
         
     }
