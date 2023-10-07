@@ -1,3 +1,7 @@
+
+<?php  
+include "connection.php"
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -45,72 +49,31 @@
 		</div>
 
 		<div class="row">
+		<?php 
+
+$query="SELECT * FROM `departments`";
+
+$data=$conn->query($query);
+
+while($row=mysqli_fetch_assoc($data)){
+	
+
+	?>
+
+		
 			<div class="col-lg-4 col-md-6 ">
 				<div class="department-block mb-5">
 					<img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
 					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Opthomology</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More  <i class="icofont-simple-right ml-2"></i></a>
+						<h4 class="mt-4 mb-2 title-color"><?php echo $row['deptname'] ?></h4>
+						<p class="mb-4"><?php echo $row['deptdesc'] ?></p>
+						
 					</div>
 				</div>
 			</div>
+			<?php } ?>
 
-			<div class="col-lg-4 col-md-6">
-				<div class="department-block mb-5">
-					<img src="images/service/service-2.jpg" alt="" class="img-fluid w-100">
-					<div class="content">
-						<h4 class="mt-4 mb-2  title-color">Cardiology</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4 col-md-6">
-				<div class="department-block mb-5">
-					<img src="images/service/service-3.jpg" alt="" class="img-fluid w-100">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Dental Care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
-
-
-			<div class="col-lg-4 col-md-6 ">
-				<div class="department-block  mb-5 mb-lg-0">
-					<img src="images/service/service-4.jpg" alt="" class="img-fluid w-100">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Child Care</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-lg-4 col-md-6">
-				<div class="department-block mb-5 mb-lg-0">
-					<img src="images/service/service-6.jpg" alt="" class="img-fluid w-100">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Pulmology</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
-			
-			<div class="col-lg-4 col-md-6">
-				<div class="department-block mb-5 mb-lg-0">
-					<img src="images/service/service-8.jpg" alt="" class="img-fluid w-100">
-					<div class="content">
-						<h4 class="mt-4 mb-2 title-color">Gynecology</h4>
-						<p class="mb-4">Saepe nulla praesentium eaque omnis perferendis a doloremque.</p>
-						<a href="department-single.html" class="read-more">Learn More <i class="icofont-simple-right ml-2"></i></a>
-					</div>
-				</div>
-			</div>
+		
 		</div>
 	</div>
 </section>
