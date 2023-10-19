@@ -5,7 +5,7 @@
 				<div class="section-title text-center">
 					<h2>We served over 5000+ Patients</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>We've proudly served 5000+ patients, offering exceptional healthcare with unwavering commitment to our community's well-being</p>
 				</div>
 			</div>
 		</div>
@@ -18,7 +18,7 @@
 					<i class="icofont-quote-right"></i>
 
 					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
+						<img src="images/testi/client5.jpg" alt="" class="img-fluid">
 					</div>
 
 					<div class="client-info ">
@@ -32,7 +32,7 @@
 
 				<div class="testimonial-block style-2  gray-bg">
 					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb2.jpg" alt="" class="img-fluid">
+						<img src="images/testi/client1.jpg" alt="" class="img-fluid">
 					</div>
 
 					<div class="client-info">
@@ -48,7 +48,7 @@
 
 				<div class="testimonial-block style-2  gray-bg">
 					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb3.jpg" alt="" class="img-fluid">
+						<img src="images/testi/client7.jpg"alt="" class="img-fluid">
 					</div>
 
 					<div class="client-info">
@@ -64,7 +64,7 @@
 
 				<div class="testimonial-block style-2  gray-bg">
 					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb4.jpg" alt="" class="img-fluid">
+						<img src="images/testi/client6.jpg" alt="" class="img-fluid">
 					</div>
 
 					<div class="client-info">
@@ -79,7 +79,7 @@
 
 				<div class="testimonial-block style-2  gray-bg">
 					<div class="testimonial-thumb">
-						<img src="images/team/test-thumb1.jpg" alt="" class="img-fluid">
+						<img src="images/testi/client3.jpg"alt="" class="img-fluid">
 					</div>
 
 					<div class="client-info">
