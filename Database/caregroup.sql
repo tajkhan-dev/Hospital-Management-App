@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Oct 18, 2023 at 05:24 PM
+-- Generation Time: Oct 19, 2023 at 05:54 PM
 -- Server version: 10.10.2-MariaDB
 -- PHP Version: 8.0.26
 
@@ -32,6 +32,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
   `deptid` int(11) NOT NULL,
   `deptname` varchar(255) NOT NULL,
   `deptdesc` varchar(255) NOT NULL,
+  `deptpic` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`deptid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -39,11 +40,11 @@ CREATE TABLE IF NOT EXISTS `departments` (
 -- Dumping data for table `departments`
 --
 
-INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`) VALUES
-(10, 'Cardiology', 'Medical department specializing in heart-related conditions and treatments.'),
-(20, 'Dental Care', 'Medical department focused on oral health and dental treatments'),
-(30, 'neurology', '\r\nMedical department specializing in the diagnosis and treatment of neurological disorders and conditions'),
-(40, 'pulmology', 'Medical department dedicated to the diagnosis and treatment of respiratory and lung-related disorders');
+INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`, `deptpic`) VALUES
+(10, 'Cardiology', 'Cardiology experts provide advanced heart care solutions and expertise.', 'images/dept/cardio.jpg'),
+(20, 'Dental Care', 'Dental Care experts offer advanced oral health solutions and expertise.', 'images/dept/dental_care.png'),
+(30, 'Neurology', 'Neurology experts provide advanced brain health solutions and expertise.', 'images/dept/neuro3.jpg'),
+(40, 'Pulmology', 'Pulmology experts deliver advanced lung health solutions and expertise.', 'images/dept/pulmonology.jpg');
 
 -- --------------------------------------------------------
 
