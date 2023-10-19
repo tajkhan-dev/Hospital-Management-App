@@ -935,6 +935,7 @@ a:focus {
   margin-bottom: 30px;
   border: 5px solid #eff0f3;
   margin-top: -5px;
+  object-fit: cover;
 }
 
 .testimonial-block.style-2 .client-info p {

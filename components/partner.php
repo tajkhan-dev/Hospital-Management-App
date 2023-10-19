@@ -5,7 +5,7 @@
 				<div class="section-title text-center">
 					<h2>Partners who support us</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>Dedicated partners who stand by our side, providing invaluable support to advance our mission. Their commitment and collaboration drive our success, creating a brighter future for all.</p>
 				</div>
 			</div>
 		</div>

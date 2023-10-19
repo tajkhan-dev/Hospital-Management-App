@@ -38,7 +38,7 @@
 				<h2 class="title-color">Personal care for your healthy living</h2>
 			</div>
 			<div class="col-lg-8">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quod laborum alias. Vitae dolorum, officia sit! Saepe ullam facere at, consequatur incidunt, quae esse, quis ut reprehenderit dignissimos, libero delectus.</p>
+				<p>At our core, we are dedicated to your well-being, comfort, and vibrant living. Our unwavering commitment to personal care and your journey to a healthier, happier life is our top priority. We provide comprehensive support and services designed to enrich every aspect of your health and well-being.</p>
 				<img src="images/about/sign.png" alt="" class="img-fluid">
 			</div>
 		</div>
@@ -52,28 +52,28 @@
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="images/about/about-1.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Healthcare for Kids</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Compassionate healthcare for kids is our priority. We provide the care they deserve.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="images/about/about-2.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Medical Counseling</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Explore Medical Counseling for expert guidance in making informed health decisions.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item mb-5 mb-lg-0">
 					<img src="images/about/about-3.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Modern Equipments</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Experience the power of modern equipment. Cutting-edge technology to meet your needs.</p>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="about-block-item">
 					<img src="images/about/about-4.jpg" alt="" class="img-fluid w-100">
 					<h4 class="mt-3">Qualified Doctors</h4>
-					<p>Voluptate aperiam esse possimus maxime repellendus, nihil quod accusantium .</p>
+					<p>Meet our team of highly qualified doctors. Your health is in expert hands.</p>
 				</div>
 			</div>
 		</div>
@@ -153,7 +153,7 @@
 					<img src="images/team/2.jpg" alt="" class="img-fluid w-100">
 
 					<div class="content">
-						<h4 class="mt-4 mb-0"><a href="doctor-single.html">Marshal Root</a></h4>
+						<h4 class="mt-4 mb-0"><a href="doctor-single.html">Rabia Nazeer</a></h4>
 						<p>Surgeon, Сardiologist</p>
 					</div>
 				</div>
@@ -174,7 +174,7 @@
 					<img src="images/team/4.jpg" alt="" class="img-fluid w-100">
 
 					<div class="content">
-						<h4 class="mt-4 mb-0"><a href="doctor-single.html">Rishat Ahmed</a></h4>
+						<h4 class="mt-4 mb-0"><a href="doctor-single.html">Waseem Ahmed</a></h4>
 						<p>Orthopedic Surgeon</p>
 					</div>
 				</div>
@@ -198,10 +198,10 @@
 				<div class="testimonial-block">
 					<div class="client-info ">
 						<h4>Amazing service!</h4>
-						<span>John Partho</span>
+						<span>Hassam Kareem</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+					The hospital's state-of-the-art facility and its dedicated doctors provided remarkable service. I felt incredibly well taken care of, and their professionalism and kindness.
 					</p>
 					<i class="icofont-quote-right"></i>
 					
@@ -210,10 +210,10 @@
 				<div class="testimonial-block">
 					<div class="client-info">
 						<h4>Expert doctors!</h4>
-						<span>Mullar Sarth</span>
+						<span>Asma Nawaz</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+					I couldn't have asked for a better overall experience with the hospital, doctors, and services. They made my journey to recovery smooth, comfortable, and remarkably effective.
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
@@ -221,10 +221,10 @@
 				<div class="testimonial-block">
 					<div class="client-info">
 						<h4>Good Support!</h4>
-						<span>Kolis Mullar</span>
+						<span>M.Usman</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+					I'm deeply grateful for the exceptional services provided by the hospital, the expertise of the compassionate doctors, and the top-notch care I received.
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
@@ -232,10 +232,10 @@
 				<div class="testimonial-block">
 					<div class="client-info">
 						<h4>Nice Environment!</h4>
-						<span>Partho Sarothi</span>
+						<span>Umer Junaid</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+					From the welcoming facility to the expertise of the doctors and the comprehensive range of services offered, everything at the hospital is truly impressive.
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
@@ -243,10 +243,10 @@
 				<div class="testimonial-block">
 					<div class="client-info">
 						<h4>Modern Service!</h4>
-						<span>Kolis Mullar</span>
+						<span>Irfan Ghazi</span>
 					</div>
 					<p>
-						They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat. Quibusdam laboriosam eveniet nostrum nemo commodi numquam quod.
+					The hospital's exceptional services, dedicated doctors, and overall care exceeded my expectations. I can't thank them enough for their unwavering dedication and support.
 					</p>
 					<i class="icofont-quote-right"></i>
 				</div>
