@@ -1,4 +1,6 @@
-<?php include("connection.php")  ?>
+
+
+
 <section class="section appoinment">
     <div class="container">
         <div class="row align-items-center">
@@ -14,29 +16,20 @@
                 <div class="appoinment-wrap mt-5 mt-lg-0">
                     <h2 class="mb-2 title-color">Book appoinment</h2>
                     <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
-                    <form id="#" class="appoinment-form" method="post" action="#">
+                    <form id="#" class="appoinment-form" >
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <form action="#" method="post">
-                                    <select name="deptselect" class="form-control" id="exampleFormControlSelect1" selected>
-                                        <?php
+                                    <form method="">
+                                    <select class="form-control" id="departselect" >
+                                       
+                                            <option value="">Select your country</option>
 
-                                        $query = "SELECT * FROM `departments`";
-
-                                        $data = $conn->query($query);
-
-                                        while ($row = mysqli_fetch_assoc($data)) {
-
-
-                                        ?>
-                                            <option value="doc1"><?php echo $row['deptname'] ?></option>
-
-                                        <?php   }
+                                    
                                       
                                         
                                         
-                                        ?>
+                                     
                                     </select>
                                     </form>
 
@@ -44,23 +37,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <form action="#" method="POST">
-
-                                        <select class="form-control" id="exampleFormControlSelect2">
+                                    <form">
+   <select class="form-control" id="exampleFormControlSelect2">
     
-                                            <?php
-    
-                                            $query = "SELECT * FROM `doctors` WHERE deptid";
-    
-                                            $data = $conn->query($query);
-    
-                                            while ($row = mysqli_fetch_assoc($data)) {
-    
-    
-                                            ?>
-                                                <option><?php echo $row['deptname'] ?></option>
-    
-                                            <?php   } ?>
                                         </select>
                                     </form>
                                 </div>
@@ -100,3 +79,33 @@
         </div>
     </div>
 </section>
+
+
+
+<script>
+$(document).ready(function($){
+    function loadDepartment(){
+        alert("I'm working");
+        $.ajax({
+            url:"getdept.php",
+            type: "POST",
+            success: function(data) {
+              
+                $("#departselect").append(data);
+            },
+            error: function(xhr, status, error) {
+                console.log("AJAX Error: " + error);
+            }
+        });
+    }
+    loadDepartment();
+});
+
+
+
+
+
+
+
+
+</script>
