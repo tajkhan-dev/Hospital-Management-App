@@ -43,7 +43,7 @@ include "connection.php"
 				<div class="section-title">
 					<h2>Award winning patient care</h2>
 					<div class="divider mx-auto my-4"></div>
-					<p>Lets know moreel necessitatibus dolor asperiores illum possimus sint voluptates incidunt molestias nostrum laudantium. Maiores porro cumque quaerat.</p>
+					<p>Explore our Department Page to learn more about the areas we specialize in and discover how we're dedicated to meeting your unique needs.</p>
 				</div>
 			</div>
 		</div>
@@ -63,7 +63,7 @@ while($row=mysqli_fetch_assoc($data)){
 		
 			<div class="col-lg-4 col-md-6 ">
 				<div class="department-block mb-5">
-					<img src="images/service/service-1.jpg" alt="" class="img-fluid w-100">
+					<img src="<?php echo $row['deptpic'] ?>" alt="" class="img-fluid w-100">
 					<div class="content">
 						<h4 class="mt-4 mb-2 title-color"><?php echo $row['deptname'] ?></h4>
 						<p class="mb-4"><?php echo $row['deptdesc'] ?></p>

@@ -23,9 +23,9 @@
 
 					<div class="client-info ">
 						<h4>Amazing service!</h4>
-						<span>John Partho</span>
+						<span>Ashraf Nawaz</span>
 						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						The hospital's exceptional services, dedicated doctors, and overall care exceeded my expectations. I can't thank them enough for their unwavering dedication and support.
 						</p>
 					</div>
 				</div>
@@ -37,9 +37,9 @@
 
 					<div class="client-info">
 						<h4>Expert doctors!</h4>
-						<span>Mullar Sarth</span>
+						<span>Ayesha Ali</span>
 						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						I'm deeply grateful for the exceptional services provided by the hospital, the expertise of the compassionate doctors, and the top-notch care I received.
 						</p>
 					</div>
 					
@@ -53,9 +53,9 @@
 
 					<div class="client-info">
 						<h4>Good Support!</h4>
-						<span>Kolis Mullar</span>
+						<span>Zubair Khoso</span>
 						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						The hospital's state-of-the-art facility and its dedicated doctors provided remarkable service. I felt incredibly well taken care of, and their professionalism and kindness.
 						</p>
 					</div>
 					
@@ -69,9 +69,9 @@
 
 					<div class="client-info">
 						<h4>Nice Environment!</h4>
-						<span>Partho Sarothi</span>
+						<span>Mahnoor Khan</span>
 						<p class="mt-4">
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						From the welcoming facility to the expertise of the doctors and the comprehensive range of services offered, everything at the hospital is truly impressive.
 						</p>
 					</div>
 					<i class="icofont-quote-right"></i>
@@ -84,9 +84,9 @@
 
 					<div class="client-info">
 						<h4>Modern Service!</h4>
-						<span>Kolis Mullar</span>
+						<span>Yaqoob Ahmed</span>
 						<p>
-							They provide great service facilty consectetur adipisicing elit. Itaque rem, praesentium, iure, ipsum magnam deleniti a vel eos adipisci suscipit fugit placeat.
+						I couldn't have asked for a better overall experience with the hospital, doctors, and services. They made my journey to recovery smooth, comfortable, and remarkably effective.
 						</p>
 					</div>
 					<i class="icofont-quote-right"></i>
