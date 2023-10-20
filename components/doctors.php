@@ -17,7 +17,7 @@
 
 $cater_GET = "SELECT * FROM `departments`";
 
-$res = mysqli_query($conn,$cater_GET);
+$res = $conn->query($cater_GET);
 
 while($row = mysqli_fetch_assoc($res)){
 
@@ -46,7 +46,7 @@ while($row = mysqli_fetch_assoc($res)){
 $singleDoc_GET = "SELECT doctors.*,departments.deptname FROM `doctors` JOIN  departments ON  doctors.deptid = departments.deptid";
 
 
-$resD = mysqli_query($conn,$singleDoc_GET);
+$resD = $conn->query($singleDoc_GET);
 
 
 while($rowD = mysqli_fetch_assoc($resD)  ){

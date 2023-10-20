@@ -26,7 +26,7 @@ if(mysqli_num_rows($res_user) > 0 ){
     echo "<script>alert('Welcome $userName');window.location.href='/Hospital-Management-App/index.php'</script>";   
 }else
 
-        echo "<script>alert('Invalid Credential !');window.location.href='userAuth/login.php'</script>";                   
+        echo "<script>alert('Invalid Credential !');window.location.href='/Hospital-Management-App/userAuth/login.php'</script>";                   
         
 
 }

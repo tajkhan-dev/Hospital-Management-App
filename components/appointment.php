@@ -1,4 +1,4 @@
-<?php include("connection.php")?>
+<?php include("connection.php") ?>
 <section class="section appoinment">
     <div class="container">
         <div class="row align-items-center">
@@ -18,27 +18,19 @@
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                   
-                                        <select class="form-control" id="departselect" selected>
 
-                                            <option value="">Select your country</option>
+                                    <select class="form-control" id="departselect" selected>
 
-
-
-
-
-
-                                        </select>
-                              
-
-                                </div>
+                                        <option value="">Select your country</option>
+</select>
+  </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
                                     <select name="doc" class="form-control" id="docselect">
-                                            <option value="">Select Doctor</option>
-                                        </select>
-                                 
+                                        <option value="">Select Doctor</option>
+                                    </select>
+
                                 </div>
                             </div>
 
@@ -57,33 +49,51 @@
                             <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
                         </div>
 
+<button type="submit" value="submit" name="submit" class="btn btn-main-2 btn-icon btn-round-full">
+    Make appoinment <i class="icofont-simple-right ml-2  "></i>
+</button>
 
-<input type="submit" value="submit" name="submit">
 
                     </form>
-                    <?php 
-                    if(isset($_POST['submit'])){
 
-                        $name=$_POST['myname'];
-                        $message=$_POST['message'];
-                        $date=$_POST['date'];
-                        $docid=$_POST['doc'];
-
-                        $sql="INSERT INTO `appointments` (`patient_name`,`message`,`date`,`docid`)VALUES('$name','$message','$date','$docid')";
-                        $result=$conn->query($sql);
-
-                        echo "<script>
-                        alert('appointment scheduled')
-                        window.location.href='index.php'
-                        </script>";
-                    }                    
-                    ?>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
+<?php
+if (isset($_POST['submit'])) {
+
+    $name = $_POST['myname'];
+    $message = $_POST['message'];
+    $date = $_POST['date'];
+    $docid = $_POST['doc'];
+
+$checksql="SELECT `appid` from `appointments` WHERE patient_name='$name'";
+
+
+$app=$conn->query($checksql);
+
+if($app){
+  echo "<script>
+  alert('Already scheduled $app')
+  </script>";  
+}else{
+
+
+    // $sql = "INSERT INTO `appointments` (`patient_name`,`message`,`date`,`docid`)VALUES('$name','$message','$date','$docid')";
+    // $result = $conn->query($sql);
+    
+    // echo "<script>
+    //                     alert('appointment scheduled')
+    //                     window.location.href='index.php'
+    //                     </script>";
+}
+
+}
+?>
 
 
 <script>
