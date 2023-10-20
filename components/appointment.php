@@ -6,14 +6,15 @@
                 <div class="appoinment-content">
                     <img src="images/about/img-3.jpg" alt="" class="img-fluid">
                     <div class="emergency">
-                        <h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>+23 345 67980</h2>
+                        <h2 class="text-lg"><i class="icofont-phone-circle text-lg"></i>
+                        +92 375 65981</h2>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 col-md-10 ">
                 <div class="appoinment-wrap mt-5 mt-lg-0">
                     <h2 class="mb-2 title-color">Book appoinment</h2>
-                    <p class="mb-4">Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.</p>
+                    <p class="mb-4">Ready to book an appointment? Our user-friendly system ensures convenience. Secure your time with our experienced professionals today.</p>
                     <form id="#" class="appoinment-form" method="post" action="#">
                         <div class="row">
                             <div class="col-lg-6">
