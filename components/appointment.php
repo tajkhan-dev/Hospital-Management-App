@@ -47,7 +47,7 @@
                             </div>
                         </div>
                         <div class="form-group-2 mb-4">
-                            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
+                              <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
                         </div>
 
 <button type="submit" value="submit" name="submit" class="btn btn-main-2 btn-icon btn-round-full">
@@ -55,7 +55,7 @@
 </button>
 
 
-                    </form>
+                     </form>
 
                 </div>
             </div>
