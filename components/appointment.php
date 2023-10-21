@@ -15,12 +15,12 @@
                 <div class="appoinment-wrap mt-5 mt-lg-0">
                     <h2 class="mb-2 title-color">Book appoinment</h2>
                     <p class="mb-4">Ready to book an appointment? Our user-friendly system ensures convenience. Secure your time with our experienced professionals today.</p>
-                    <form id="#" class="appoinment-form" method="post" action="#">
+                    <form id="#" class="appoinment-form" method="post">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="form-group">
 
-                                    <select class="form-control" id="departselect" selected>
+                                    <select class="form-control" id="departselect" selected required>
 
                                         <option value="">Select your country</option>
 </select>
@@ -28,7 +28,7 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <select name="doc" class="form-control" id="docselect">
+                                    <select name="doc" class="form-control" id="docselect" required>
                                         <option value="">Select Doctor</option>
                                     </select>
 
@@ -37,17 +37,17 @@
 
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                    <input name="date" id="date" type="text" class="form-control" placeholder="dd/mm/yyyy" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="form-group">
-                                    <input name="myname" id="name" type="text" class="form-control" placeholder="enter your name">
+                                    <input name="myname" id="name" type="text" class="form-control" placeholder="enter your name" required>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group-2 mb-4">
-                            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message"></textarea>
+                            <textarea name="message" id="message" class="form-control" rows="6" placeholder="Your Message" required></textarea>
                         </div>
 
 <button type="submit" value="submit" name="submit" class="btn btn-main-2 btn-icon btn-round-full">
@@ -72,26 +72,34 @@ if (isset($_POST['submit'])) {
     $date = $_POST['date'];
     $docid = $_POST['doc'];
 
-$checksql="SELECT `appid` from `appointments` WHERE patient_name='$name'";
+$checksql="SELECT `patient_name` from `appointments` WHERE patient_name='$name'";
 
+$checkapp=$conn->query($checksql);
+if(mysqli_num_rows($checkapp)){
 
-$app=$conn->query($checksql);
+    echo "<script>
+    
+    alert('Already Scheduled');
 
-if($app){
-  echo "<script>
-  alert('Already scheduled $app')
-  </script>";  
+    </script>";
 }else{
 
 
-    // $sql = "INSERT INTO `appointments` (`patient_name`,`message`,`date`,`docid`)VALUES('$name','$message','$date','$docid')";
-    // $result = $conn->query($sql);
+
     
-    // echo "<script>
-    //                     alert('appointment scheduled')
-    //                     window.location.href='index.php'
-    //                     </script>";
+        $sql = "INSERT INTO `appointments` (`patient_name`,`message`,`date`,`docid`)VALUES('$name','$message','$date','$docid')";
+        $result = $conn->query($sql);
+        
+        echo "<script>
+                            alert('appointment scheduled')
+                            window.location.href='index.php'
+                            </script>";
 }
+
+
+
+
+
 
 }
 ?>
