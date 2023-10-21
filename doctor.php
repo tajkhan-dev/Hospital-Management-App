@@ -48,7 +48,7 @@
 			</div>
 
 		
-<?php include('components/doctorss.php')?>
+<?php include('components/doctors.php')?>
 
 		</div>
 	</section>
