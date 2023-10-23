@@ -12,7 +12,7 @@
     <title>Sign up</title>
 
    
-    <script src="https://cdn.tailwindcss.com" ></script>
+      <script src="https://cdn.tailwindcss.com" ></script>
 
       <!-- Main Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
