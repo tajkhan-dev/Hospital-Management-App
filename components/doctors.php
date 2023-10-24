@@ -7,9 +7,16 @@
 
 <div class="col-12 text-center  mb-5">
 				<div class="btn-group btn-group-toggle " data-toggle="buttons">
+
+					<?php  include('dropdown.php'); ?>
+
 					<label class="btn active ">
 						<input type="radio" name="shuffle-filter" value="all" checked="checked" />All Department
 					</label>
+
+					<!-- <input type="radio" name="shuffle-filter" value="all" checked="checked" /> -->
+
+
 
 
 
