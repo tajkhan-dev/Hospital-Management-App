@@ -42,7 +42,7 @@ include('../connection.php');
           
           
           
-              <div class=btn-container" ">
+              <div class=btn-container="">
                 <button type="submit"  target="_blank" class="btn  btn-round-full " style="cursor:pointer" name="submit" >contactus</i></button>
             </div>
       </form>
