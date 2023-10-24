@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: Oct 19, 2023 at 05:54 PM
--- Server version: 10.10.2-MariaDB
--- PHP Version: 8.0.26
+-- Host: 127.0.0.1
+-- Generation Time: Oct 24, 2023 at 09:11 AM
+-- Server version: 10.4.27-MariaDB
+-- PHP Version: 8.2.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,27 +24,51 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `contactus`
+--
+
+CREATE TABLE `contactus` (
+  `youremail` varchar(255) NOT NULL,
+  `subject` varchar(255) NOT NULL,
+  `yourmessage` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `contactus`
+--
+
+INSERT INTO `contactus` (`youremail`, `subject`, `yourmessage`) VALUES
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', ''),
+('', '', '');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `departments`
 --
 
-DROP TABLE IF EXISTS `departments`;
-CREATE TABLE IF NOT EXISTS `departments` (
+CREATE TABLE `departments` (
   `deptid` int(11) NOT NULL,
   `deptname` varchar(255) NOT NULL,
-  `deptdesc` varchar(255) NOT NULL,
-  `deptpic` varchar(255) DEFAULT NULL,
-  PRIMARY KEY (`deptid`)
+  `deptdesc` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `departments`
 --
 
-INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`, `deptpic`) VALUES
-(10, 'Cardiology', 'Cardiology experts provide advanced heart care solutions and expertise.', 'images/dept/cardio.jpg'),
-(20, 'Dental Care', 'Dental Care experts offer advanced oral health solutions and expertise.', 'images/dept/dental_care.png'),
-(30, 'Neurology', 'Neurology experts provide advanced brain health solutions and expertise.', 'images/dept/neuro3.jpg'),
-(40, 'Pulmology', 'Pulmology experts deliver advanced lung health solutions and expertise.', 'images/dept/pulmonology.jpg');
+INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`) VALUES
+(10, 'Cardiology', 'Medical department specializing in heart-related conditions and treatments.'),
+(20, 'Dental Care', 'Medical department focused on oral health and dental treatments'),
+(30, 'neurology', '\r\nMedical department specializing in the diagnosis and treatment of neurological disorders and conditions'),
+(40, 'pulmology', 'Medical department dedicated to the diagnosis and treatment of respiratory and lung-related disorders');
 
 -- --------------------------------------------------------
 
@@ -52,15 +76,13 @@ INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`, `deptpic`) VALUES
 -- Table structure for table `doctors`
 --
 
-DROP TABLE IF EXISTS `doctors`;
-CREATE TABLE IF NOT EXISTS `doctors` (
+CREATE TABLE `doctors` (
   `docid` int(11) NOT NULL,
   `docname` varchar(255) NOT NULL,
   `deptid` int(11) NOT NULL,
   `appid` varchar(255) DEFAULT NULL,
   `days` varchar(255) DEFAULT NULL,
-  `docpic` varchar(255) DEFAULT 'images//team/default-doc-pic.jpg',
-  KEY `deptid` (`deptid`)
+  `docpic` varchar(255) DEFAULT 'images//team/default-doc-pic.jpg'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -80,15 +102,13 @@ INSERT INTO `doctors` (`docid`, `docname`, `deptid`, `appid`, `days`, `docpic`) 
 -- Table structure for table `userdata`
 --
 
-DROP TABLE IF EXISTS `userdata`;
-CREATE TABLE IF NOT EXISTS `userdata` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+CREATE TABLE `userdata` (
+  `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `phone` int(11) NOT NULL,
-  `address` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=30 DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `address` varchar(255) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `userdata`
@@ -123,7 +143,41 @@ INSERT INTO `userdata` (`id`, `username`, `email`, `phone`, `address`) VALUES
 (26, 'Hassaan asdsadAhmed', 'hassutecasdsadhap@gmai.com', 324234, 'asdads'),
 (27, 'Hassaan f', 'hassutechap@gmai.cosssssssssssssm', 2131313, 'sadadsadasdasd'),
 (28, 'asasaSA', 'hassutechASasaSasASasAAAap@gmai.com', 123, 'sadadsds'),
-(29, 'Hassaan', 'hassu@co', 439875, 'dafhbdsaf7623hkbzc');
+(29, 'Hassaan', 'hassu@co', 439875, 'dafhbdsaf7623hkbzc'),
+(30, 'taj', 'tajkhan.dev@gmail.com', 2147483647, 'sdfdf'),
+(31, 'Saad', 'saadg3959@gmail.com', 2147483647, 'karachi, nazimabad no 3, rahim suit 4/18 near eid gay ground\r\nkarachi, nazimabad no 3, rahim suit 4/18 near eid gay ground');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `departments`
+--
+ALTER TABLE `departments`
+  ADD PRIMARY KEY (`deptid`);
+
+--
+-- Indexes for table `doctors`
+--
+ALTER TABLE `doctors`
+  ADD KEY `deptid` (`deptid`);
+
+--
+-- Indexes for table `userdata`
+--
+ALTER TABLE `userdata`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `userdata`
+--
+ALTER TABLE `userdata`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- Constraints for dumped tables
