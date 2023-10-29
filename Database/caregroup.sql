@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 24, 2023 at 09:11 AM
--- Server version: 10.4.27-MariaDB
--- PHP Version: 8.2.0
+-- Host: 127.0.0.1:3306
+-- Generation Time: Oct 29, 2023 at 12:23 PM
+-- Server version: 8.0.31
+-- PHP Version: 8.0.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,29 +24,52 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contactus`
+-- Table structure for table `appointments`
 --
 
-CREATE TABLE `contactus` (
-  `youremail` varchar(255) NOT NULL,
-  `subject` varchar(255) NOT NULL,
-  `yourmessage` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+DROP TABLE IF EXISTS `appointments`;
+CREATE TABLE IF NOT EXISTS `appointments` (
+  `appid` int NOT NULL AUTO_INCREMENT,
+  `patient_name` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `message` varchar(255) NOT NULL,
+  `date` varchar(255) NOT NULL,
+  `docid` int NOT NULL,
+  PRIMARY KEY (`appid`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Dumping data for table `contactus`
+-- Dumping data for table `appointments`
 --
 
-INSERT INTO `contactus` (`youremail`, `subject`, `yourmessage`) VALUES
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', ''),
-('', '', '');
+INSERT INTO `appointments` (`appid`, `patient_name`, `message`, `date`, `docid`) VALUES
+(1, 'john', 'i have some cardiovascular problems', '10/01/2000', 110),
+(4, 'sss', '', '', 0),
+(5, 'john', '', '', 0),
+(6, 'john', '', '', 0),
+(8, 'kk', '', '', 0);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `blogs`
+--
+
+DROP TABLE IF EXISTS `blogs`;
+CREATE TABLE IF NOT EXISTS `blogs` (
+  `blogid` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `blogtitle` varchar(255) NOT NULL,
+  `blogpic` varchar(255) NOT NULL,
+  `blogdesc` varchar(255) NOT NULL,
+  `blogurl` varchar(255) NOT NULL,
+  PRIMARY KEY (`blogid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`blogid`, `blogtitle`, `blogpic`, `blogdesc`, `blogurl`) VALUES
+('01', 'dummy title', 'dummy url', 'owais.png', 'dummy description');
 
 -- --------------------------------------------------------
 
@@ -54,10 +77,12 @@ INSERT INTO `contactus` (`youremail`, `subject`, `yourmessage`) VALUES
 -- Table structure for table `departments`
 --
 
-CREATE TABLE `departments` (
-  `deptid` int(11) NOT NULL,
-  `deptname` varchar(255) NOT NULL,
-  `deptdesc` varchar(255) NOT NULL
+DROP TABLE IF EXISTS `departments`;
+CREATE TABLE IF NOT EXISTS `departments` (
+  `deptid` int NOT NULL,
+  `deptname` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `deptdesc` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  PRIMARY KEY (`deptid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -76,13 +101,15 @@ INSERT INTO `departments` (`deptid`, `deptname`, `deptdesc`) VALUES
 -- Table structure for table `doctors`
 --
 
-CREATE TABLE `doctors` (
-  `docid` int(11) NOT NULL,
-  `docname` varchar(255) NOT NULL,
-  `deptid` int(11) NOT NULL,
-  `appid` varchar(255) DEFAULT NULL,
-  `days` varchar(255) DEFAULT NULL,
-  `docpic` varchar(255) DEFAULT 'images//team/default-doc-pic.jpg'
+DROP TABLE IF EXISTS `doctors`;
+CREATE TABLE IF NOT EXISTS `doctors` (
+  `docid` int NOT NULL,
+  `docname` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+  `deptid` int NOT NULL,
+  `appid` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `days` varchar(255) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `docpic` varchar(255) COLLATE utf8mb4_general_ci DEFAULT 'images//team/default-doc-pic.jpg',
+  KEY `deptid` (`deptid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -102,13 +129,15 @@ INSERT INTO `doctors` (`docid`, `docname`, `deptid`, `appid`, `days`, `docpic`) 
 -- Table structure for table `userdata`
 --
 
-CREATE TABLE `userdata` (
-  `id` int(11) NOT NULL,
+DROP TABLE IF EXISTS `userdata`;
+CREATE TABLE IF NOT EXISTS `userdata` (
+  `id` int NOT NULL AUTO_INCREMENT,
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `phone` int(11) NOT NULL,
-  `address` varchar(255) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
+  `phone` int NOT NULL,
+  `address` varchar(255) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=31 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `userdata`
@@ -116,68 +145,7 @@ CREATE TABLE `userdata` (
 
 INSERT INTO `userdata` (`id`, `username`, `email`, `phone`, `address`) VALUES
 (1, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'dsafdsfsafdas'),
-(2, 'Hassaan Ahmed', 'n6b7whjgfk@email.edu.pl', 123, 'sadaddsa'),
-(3, 'Hassaan Ahmed', 'n6b7whjgfk@email.edu.pl', 123, 'sadaddsa'),
-(4, 'Hassaan Ahmed', 'n6b7whjgfk@email.edu.pl', 123, 'sadaddsa'),
-(5, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'asdsadasd'),
-(6, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'asdsadasd'),
-(7, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'adffsdffs'),
-(8, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'adffsdffs'),
-(9, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'asdasdasd'),
-(10, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'asdasdasd'),
-(11, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'adfds'),
-(12, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'adfds'),
-(13, 'Hassaan Ahmed', 'hassutechap@gmai.com', 123, 'sadasd'),
-(14, 'Hassaan Ahmedasdasdsa', 'asdasdasdaad@asdasd', 32324, 'sadadasd'),
-(15, 'Hassaan Khan', 'hass@co', 1233323, 'asddsaasd'),
-(16, 'Hassuusss', 'hassukhn4ss4@gmail.com', 23432, 'asdsdad'),
-(17, 'Hassaan Ahmedsadsad', 'n6b7whjasdsdagfk@email.edu.pl', 324324, 'adsdsa'),
-(18, 'Hassaan Ahmsedsadsad', 'n6b7whjasdsdsagfk@email.edu.pl', 324324, 'adsdsa'),
-(19, 'Hassssaans', 'hassutessschap@gmai.com', 123123, 'sadsads'),
-(20, 'Hassssdaans', 'hassutesdsschap@gmai.com', 123123, 'sadsads'),
-(21, 'Hasssuusss', 'hassukhn4sss4@gmail.com', 23432, 'asdsdad'),
-(22, 'Hassssaduusss', 'hassuasdkhn4sss4@gmail.com', 23432, 'asdsdad'),
-(23, 'Hassaan Ahmedfdf', 'hassdfdsfsutechap@gmai.com', 43435, 'asdasdas'),
-(24, 'Hassasan Ahmedfdf', 'hassdfdsfssutechap@gmai.com', 43435, 'asdasdas'),
-(25, 'Hassasans Ahsasmed', 'hassutscasd3hsap@gmai.com', 123, 'asdasd'),
-(26, 'Hassaan asdsadAhmed', 'hassutecasdsadhap@gmai.com', 324234, 'asdads'),
-(27, 'Hassaan f', 'hassutechap@gmai.cosssssssssssssm', 2131313, 'sadadsadasdasd'),
-(28, 'asasaSA', 'hassutechASasaSasASasAAAap@gmai.com', 123, 'sadadsds'),
-(29, 'Hassaan', 'hassu@co', 439875, 'dafhbdsaf7623hkbzc'),
-(30, 'taj', 'tajkhan.dev@gmail.com', 2147483647, 'sdfdf'),
-(31, 'Saad', 'saadg3959@gmail.com', 2147483647, 'karachi, nazimabad no 3, rahim suit 4/18 near eid gay ground\r\nkarachi, nazimabad no 3, rahim suit 4/18 near eid gay ground');
-
---
--- Indexes for dumped tables
---
-
---
--- Indexes for table `departments`
---
-ALTER TABLE `departments`
-  ADD PRIMARY KEY (`deptid`);
-
---
--- Indexes for table `doctors`
---
-ALTER TABLE `doctors`
-  ADD KEY `deptid` (`deptid`);
-
---
--- Indexes for table `userdata`
---
-ALTER TABLE `userdata`
-  ADD PRIMARY KEY (`id`);
-
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `userdata`
---
-ALTER TABLE `userdata`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+(30, 'taj', 'tajkhan.dev@gmail.com', 2147483647, 'sdf');
 
 --
 -- Constraints for dumped tables
